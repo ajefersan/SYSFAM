@@ -1,4 +1,4 @@
-package com.example.sysfam;
+package com.example.sysfam.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,8 +21,8 @@ import com.google.firebase.ktx.Firebase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
-    private FirebaseAuth usuario = FirebaseAuth.getInstance();
+    //private DatabaseReference referencia = FirebaseDatabase.getInstance().getReference();
+    //private FirebaseAuth usuario = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
