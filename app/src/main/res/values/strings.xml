@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">SYSFAM</string>
     <string name="botao_acessar">Acessar</string>
+    <string name="botao_cadastrar">CADASTRAR</string>
 </resources>

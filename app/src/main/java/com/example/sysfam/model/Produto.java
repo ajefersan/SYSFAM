@@ -1,4 +1,4 @@
-package com.example.sysfam;
+package com.example.sysfam.model;
 
 public class Produto {
 
