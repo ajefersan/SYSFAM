@@ -35,10 +35,18 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseReference firebase;
     private Toolbar toolbar;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        firebase = ConfiguracaoFirebase.getFirebase();
+
+        toolbar =(Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("SYSFAM");
+        setSupportActionBar(toolbar);
+        /*
 
         botaoSair = (Button) findViewById(R.id.bt_sair);
         botaoSair.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +57,12 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main,menu);
+        return true;
     }
 }
