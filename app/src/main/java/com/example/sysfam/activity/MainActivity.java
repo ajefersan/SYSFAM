@@ -50,17 +50,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        firebase = ConfiguracaoFirebase.getFirebase();
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle("SYSFAM");
-        setSupportActionBar(toolbar);
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main,menu);
-        return true;
-
     }
 }
